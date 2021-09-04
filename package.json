@@ -1,0 +1,27 @@
+{
+  "name": "arithmetic-forms",
+  "version": "1.0.0",
+  "description": "A little arithmetic forms application covering addition, multiplication, division, division to two decimals (rounded off), subtraction, and modulo!",
+  "main": "index.js",
+  "scripts": {
+    "scss": "node-sass --watch styles/scss -o styles/css",
+    "clean": "rmdir /s dist && mkdir dist",
+    "createDirs": "cd dist && mkdir \"styles/css\" && mkdir \"scripts/js\"",
+    "build": "xcopy \"styles/css\" \"dist/styles/css\" && xcopy \"scripts/js\" \"dist/scripts/js\" && copy index.html dist",
+    "deploy": "gh-pages -d dist"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/interglobalmedia/arithmetic-forms.git"
+  },
+  "author": "Maria D. Campbell",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/interglobalmedia/arithmetic-forms/issues"
+  },
+  "homepage": "https://github.com/interglobalmedia/arithmetic-forms#readme",
+  "dependencies": {
+    "gh-pages": "^2.2.0",
+    "node-sass": "^6.0.1"
+  }
+}

@@ -1,0 +1,77 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Muli", sans-serif;
+  background: #981b1b;
+}
+
+h1, #credits {
+  color: #fff;
+  text-align: center;
+}
+
+.form {
+  width: 90%;
+  margin: 1.5rem auto;
+}
+
+fieldset {
+  padding: 10px;
+  border: 1px solid #0b67ab;
+  color: #0b67ab;
+  background: #f2935f;
+}
+input {
+  padding: 5px;
+}
+
+button {
+  width: 150px;
+  padding: 5px;
+  font-size: 1rem;
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
+  background: #0b67ab;
+  color: white;
+  outline: none;
+  border: 1px solid #0b67ab;
+  cursor: pointer;
+  &:focus {
+    background: #f9bf34;
+    color: #0b67ab;
+  }
+}
+
+.reset {
+  width: 90px;
+}
+
+// Sticky Footer Styling
+:root {
+    --space: 1.5em 0;
+    --space: 2em 0;
+}
+
+.Site {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.Site-content {
+    flex: 1 0 auto;
+    padding: var(--space) var(--space) 0;
+    width: 100%;
+}
+
+.Site-content:after {
+    content: "\00a0";
+    display: block;
+    margin-top: var(--space);
+    height: 0;
+    visibility: hidden;
+}
