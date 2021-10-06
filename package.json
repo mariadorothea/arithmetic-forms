@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "scss": "node-sass --watch styles/scss -o styles/css",
-    "clean": "rmdir /s dist && mkdir dist",
+    "clean": "rmdir /s /q dist && mkdir dist",
     "createDirs": "cd dist && mkdir \"styles/css\" && mkdir \"scripts/js\"",
     "build": "xcopy \"styles/css\" \"dist/styles/css\" && xcopy \"scripts/js\" \"dist/scripts/js\" && copy index.html dist",
     "deploy": "gh-pages -d dist"
